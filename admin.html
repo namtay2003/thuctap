@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,13 @@
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/user.css">
+    <link rel="stylesheet" href="./assets/css/admin.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <!-- link bootsrtap icon  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
+
 <body>
     <div class="app">
         <!-- header -->
@@ -30,550 +33,563 @@
                 <div class="grid wide">
                     <div class="header__main-item">
                         <!-- logo -->
-                    <div class="header__main-logo">
-                        <a href="./index.html">
-                            <img src="./assets/img/base/header/fahasa-logo.png" alt="">
-                        </a>
-                    </div>
-
-                    <!-- nav -->
-                    <div class="header__main-nav">
-                        <div class="nav-item">
-                            <img src="./assets/img/icon-menu.png" alt="">
-                            <i class="bi bi-chevron-down"></i>
+                        <div class="header__main-logo">
+                            <a href="./index.html">
+                                <img src="./assets/img/base/header/fahasa-logo.png" alt="">
+                            </a>
                         </div>
 
-                        <div class="nav__dropdown">                
-                            <div class="row">
-                                <div class="l-3 nav__dropdown-left">
-                                    <h2 class="nav__dropdown-left-title">
-                                        Danh mục sản phẩm
-                                    </h2>
+                        <!-- nav -->
+                        <div class="header__main-nav">
+                            <div class="nav-item">
+                                <img src="./assets/img/icon-menu.png" alt="">
+                                <i class="bi bi-chevron-down"></i>
+                            </div>
 
-                                    <ul class="nav__dropdown-left-list">
-                                        <li class="nav__dropdown-left-item" id="nav-left-item-1">
-                                            <a href="">
-                                                Sách trong nước
-                                            </a>
-                                        </li>
+                            <div class="nav__dropdown">
+                                <div class="row">
+                                    <div class="l-3 nav__dropdown-left">
+                                        <h2 class="nav__dropdown-left-title">
+                                            Danh mục sản phẩm
+                                        </h2>
 
-                                        <li class="nav__dropdown-left-item" id="nav-left-item-2">
-                                            <a href="">
-                                                FOREIGN BOOKS
-                                            </a>
-                                        </li>
+                                        <ul class="nav__dropdown-left-list">
+                                            <li class="nav__dropdown-left-item" id="nav-left-item-1">
+                                                <a href="">
+                                                    Sách trong nước
+                                                </a>
+                                            </li>
 
-                                        <li class="nav__dropdown-left-item" id="nav-left-item-3">
-                                            <a href="">
-                                                VPP - Dụng Cụ Học Sinh
-                                            </a>
-                                        </li>
+                                            <li class="nav__dropdown-left-item" id="nav-left-item-2">
+                                                <a href="">
+                                                    FOREIGN BOOKS
+                                                </a>
+                                            </li>
 
-                                        <li class="nav__dropdown-left-item" id="nav-left-item-4">
-                                            <a href="">
-                                                Đồ Chơi
-                                            </a>
-                                        </li>
+                                            <li class="nav__dropdown-left-item" id="nav-left-item-3">
+                                                <a href="">
+                                                    VPP - Dụng Cụ Học Sinh
+                                                </a>
+                                            </li>
 
-                                        <li class="nav__dropdown-left-item" id="nav-left-item-5">
-                                            <a href="">
-                                                Làm Đẹp - Sức Khỏe
-                                            </a>
-                                        </li>
+                                            <li class="nav__dropdown-left-item" id="nav-left-item-4">
+                                                <a href="">
+                                                    Đồ Chơi
+                                                </a>
+                                            </li>
 
-                                        <li class="nav__dropdown-left-item" id="nav-left-item-6">
-                                            <a href="">
-                                                Hành Trang Đến Trường
-                                            </a>
-                                        </li>
+                                            <li class="nav__dropdown-left-item" id="nav-left-item-5">
+                                                <a href="">
+                                                    Làm Đẹp - Sức Khỏe
+                                                </a>
+                                            </li>
 
-                                        <li class="nav__dropdown-left-item" id="nav-left-item-7">
-                                            <a href="">
-                                                VPP - DCHS Theo Thương Hiệu
-                                            </a>
-                                        </li>
+                                            <li class="nav__dropdown-left-item" id="nav-left-item-6">
+                                                <a href="">
+                                                    Hành Trang Đến Trường
+                                                </a>
+                                            </li>
 
-                                        <li class="nav__dropdown-left-item" id="nav-left-item-8">
-                                            <a href="">
-                                                Đồ Chơi Theo Thương Hiệu
-                                            </a>
-                                        </li>
+                                            <li class="nav__dropdown-left-item" id="nav-left-item-7">
+                                                <a href="">
+                                                    VPP - DCHS Theo Thương Hiệu
+                                                </a>
+                                            </li>
 
-                                        <li class="nav__dropdown-left-item" id="nav-left-item-9">
-                                            <a href="">
-                                                Bách Hóa Online - Lưu Niệm
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-    
-                                <div class="l-9 nav__dropdown-right">
-                                    <div class="nav__dropdown-right-head">
-                                        <i class="bi bi-book" style="font-size: 24px;color: rgb(223, 163, 53);"></i>
-                                        Sách Trong Nước
+                                            <li class="nav__dropdown-left-item" id="nav-left-item-8">
+                                                <a href="">
+                                                    Đồ Chơi Theo Thương Hiệu
+                                                </a>
+                                            </li>
+
+                                            <li class="nav__dropdown-left-item" id="nav-left-item-9">
+                                                <a href="">
+                                                    Bách Hóa Online - Lưu Niệm
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
 
-                                    <div class="nav__dropdown-right-content">
-                                        <div class="row">
-                                            <div class="col l-3 nav__dropdown-right-content-list">
-                                                <h4>
-                                                    VĂN HỌC
-                                                </h4>
+                                    <div class="l-9 nav__dropdown-right">
+                                        <div class="nav__dropdown-right-head">
+                                            <i class="bi bi-book" style="font-size: 24px;color: rgb(223, 163, 53);"></i>
+                                            Sách Trong Nước
+                                        </div>
 
-                                                <ul class="nav__dropdown-right-content-item">
-                                                    <li>
-                                                        <a href="">Tiểu Thuyết</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Truyện Ngắn - Tản Văn</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Light Novel</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Ngôn Tình</a>
-                                                    </li>                                                    
-                                                </ul>
+                                        <div class="nav__dropdown-right-content">
+                                            <div class="row">
+                                                <div class="col l-3 nav__dropdown-right-content-list">
+                                                    <h4>
+                                                        VĂN HỌC
+                                                    </h4>
 
-                                                <span class="expand">
-                                                    Xem tất cả
-                                                </span>
+                                                    <ul class="nav__dropdown-right-content-item">
+                                                        <li>
+                                                            <a href="">Tiểu Thuyết</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Truyện Ngắn - Tản Văn</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Light Novel</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Ngôn Tình</a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <span class="expand">
+                                                        Xem tất cả
+                                                    </span>
+                                                </div>
+                                                <div class="col l-3 nav__dropdown-right-content-list">
+                                                    <h4>
+                                                        KINH TẾ
+                                                    </h4>
+
+                                                    <ul class="nav__dropdown-right-content-item">
+                                                        <li>
+                                                            <a href="">Nhân Vật - Bài Học Kinh Doanh</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Quản Trị - Lãnh Đạo</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Marketing - Bán Hàng</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Phân Tích Kinh Tế</a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <span class="expand">
+                                                        Xem tất cả
+                                                    </span>
+                                                </div>
+                                                <div class="col l-3 nav__dropdown-right-content-list">
+                                                    <h4>
+                                                        TÂM LÝ - KĨ NĂNG SỐNG
+                                                    </h4>
+
+                                                    <ul class="nav__dropdown-right-content-item">
+                                                        <li>
+                                                            <a href="">Kỹ Năng Sống</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Rèn Luyện Nhân Cách</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Tâm Lý</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Sách Cho Tuổi Mới Lớn</a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <span class="expand">
+                                                        Xem tất cả
+                                                    </span>
+                                                </div>
+                                                <div class="col l-3 nav__dropdown-right-content-list">
+                                                    <h4>
+                                                        NUÔI DẠY CON
+                                                    </h4>
+
+                                                    <ul class="nav__dropdown-right-content-item">
+                                                        <li>
+                                                            <a href="">Cẩm Nang Làm Cha Mẹ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Phương Pháp Giáo Dục Trẻ Các Nước</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Phát Triển Trí Tuệ Cho Trẻ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Phát Triển Kỹ Năng Cho Trẻ</a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <span class="expand">
+                                                        Xem tất cả
+                                                    </span>
+                                                </div>
                                             </div>
-                                            <div class="col l-3 nav__dropdown-right-content-list">
-                                                <h4>
-                                                    KINH TẾ
-                                                </h4>
 
-                                                <ul class="nav__dropdown-right-content-item">
-                                                    <li>
-                                                        <a href="">Nhân Vật - Bài Học Kinh Doanh</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Quản Trị - Lãnh Đạo</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Marketing - Bán Hàng</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Phân Tích Kinh Tế</a>
-                                                    </li>                                                    
-                                                </ul>
+                                            <div class="row">
+                                                <div class="col l-3 nav__dropdown-right-content-list">
+                                                    <h4>
+                                                        SÁCH THIẾU NHI
+                                                    </h4>
 
-                                                <span class="expand">
-                                                    Xem tất cả
-                                                </span>
-                                            </div>
-                                            <div class="col l-3 nav__dropdown-right-content-list">
-                                                <h4>
-                                                    TÂM LÝ - KĨ NĂNG SỐNG
-                                                </h4>
+                                                    <ul class="nav__dropdown-right-content-item">
+                                                        <li>
+                                                            <a href="">Manga - Comic</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Kiến Thức Bách Khoa</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Sách Tranh Kỹ Năng Sống Cho Trẻ</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Vừa Học - Vừa Học Vừa Chơi Với Trẻ</a>
+                                                        </li>
+                                                    </ul>
 
-                                                <ul class="nav__dropdown-right-content-item">
-                                                    <li>
-                                                        <a href="">Kỹ Năng Sống</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Rèn Luyện Nhân Cách</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Tâm Lý</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Sách Cho Tuổi Mới Lớn</a>
-                                                    </li>                                                    
-                                                </ul>
+                                                    <span class="expand">
+                                                        Xem tất cả
+                                                    </span>
+                                                </div>
+                                                <div class="col l-3 nav__dropdown-right-content-list">
+                                                    <h4>
+                                                        TIỂU SỬ - HỒI KÝ
+                                                    </h4>
 
-                                                <span class="expand">
-                                                    Xem tất cả
-                                                </span>
-                                            </div>
-                                            <div class="col l-3 nav__dropdown-right-content-list">
-                                                <h4>
-                                                    NUÔI DẠY CON
-                                                </h4>
+                                                    <ul class="nav__dropdown-right-content-item">
+                                                        <li>
+                                                            <a href="">Câu Chuyện Cuộc Đời</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Chính Trị</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Kinh Tế</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Nghệ Thuật - Giải Trí</a>
+                                                        </li>
+                                                    </ul>
 
-                                                <ul class="nav__dropdown-right-content-item">
-                                                    <li>
-                                                        <a href="">Cẩm Nang Làm Cha Mẹ</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Phương Pháp Giáo Dục Trẻ Các Nước</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Phát Triển Trí Tuệ Cho Trẻ</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Phát Triển Kỹ Năng Cho Trẻ</a>
-                                                    </li>                                                    
-                                                </ul>
+                                                    <span class="expand">
+                                                        Xem tất cả
+                                                    </span>
+                                                </div>
+                                                <div class="col l-3 nav__dropdown-right-content-list">
+                                                    <h4>
+                                                        GIÁO KHOA - THAM KHẢO
+                                                    </h4>
 
-                                                <span class="expand">
-                                                    Xem tất cả
-                                                </span>
+                                                    <ul class="nav__dropdown-right-content-item">
+                                                        <li>
+                                                            <a href="">Sách Giáo Khoa</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Sách Tham Khảo</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Luyện Thi THPT Quốc Gia</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Mẫu Giáo</a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <span class="expand">
+                                                        Xem tất cả
+                                                    </span>
+                                                </div>
+                                                <div class="col l-3 nav__dropdown-right-content-list">
+                                                    <h4>
+                                                        SÁCH HỌC NGOẠI NGỮ
+                                                    </h4>
+
+                                                    <ul class="nav__dropdown-right-content-item">
+                                                        <li>
+                                                            <a href="">Tiếng Anh</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Tiếng Nhật</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Tiếng Hoa</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Tiếng Hàn</a>
+                                                        </li>
+                                                    </ul>
+
+                                                    <span class="expand">
+                                                        Xem tất cả
+                                                    </span>
+                                                </div>
                                             </div>
                                         </div>
-                                        
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- search -->
+                        <div class="header__main-search" style="cursor: pointer;">
+                            <input class="search__input" type="text" placeholder="7 bước để thay cuộc đời bạn mãi mãi">
+                            <span class="btn-search">
+                                <i class="bi bi-search"></i>
+                            </span>
+
+                            <!-- search dropdown -->
+
+                            <div class="search__dropdown">
+                                <div class="search__dropdown-banner">
+                                    <a href="" class="search__dropdown-banner-link">
+                                        <span>Quà tặng 8/3 - Chúc mừng ngày Phụ Nữ </span>
+                                        <img src="./assets/img/base/header/search/2000199224070-_1_.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="search__dropdown-list">
+                                    <div class="search__dropdown-title">
+                                        <div class="search__dropdown-title-left">
+                                            <img src="./assets/img/base/header/search/ico_searchtrending_black.svg"
+                                                alt="">
+                                            <span>Từ khóa hot</span>
+                                        </div>
+
+                                        <i class="bi bi-arrow-repeat"></i>
+                                    </div>
+
+                                    <div class="search__dropdown-hotkey">
                                         <div class="row">
-                                            <div class="col l-3 nav__dropdown-right-content-list">
-                                                <h4>
-                                                    SÁCH THIẾU NHI
-                                                </h4>
-
-                                                <ul class="nav__dropdown-right-content-item">
-                                                    <li>
-                                                        <a href="">Manga - Comic</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Kiến Thức Bách Khoa</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Sách Tranh Kỹ Năng Sống Cho Trẻ</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Vừa Học - Vừa Học Vừa Chơi Với Trẻ</a>
-                                                    </li>                                                    
-                                                </ul>
-
-                                                <span class="expand">
-                                                    Xem tất cả
-                                                </span>
-                                            </div>
-                                            <div class="col l-3 nav__dropdown-right-content-list">
-                                                <h4>
-                                                    TIỂU SỬ - HỒI KÝ
-                                                </h4>
-
-                                                <ul class="nav__dropdown-right-content-item">
-                                                    <li>
-                                                        <a href="">Câu Chuyện Cuộc Đời</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Chính Trị</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Kinh Tế</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Nghệ Thuật - Giải Trí</a>
-                                                    </li>                                                    
-                                                </ul>
-
-                                                <span class="expand">
-                                                    Xem tất cả
-                                                </span>
-                                            </div>
-                                            <div class="col l-3 nav__dropdown-right-content-list">
-                                                <h4>
-                                                    GIÁO KHOA - THAM KHẢO
-                                                </h4>
-
-                                                <ul class="nav__dropdown-right-content-item">
-                                                    <li>
-                                                        <a href="">Sách Giáo Khoa</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Sách Tham Khảo</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Luyện Thi THPT Quốc Gia</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Mẫu Giáo</a>
-                                                    </li>                                                    
-                                                </ul>
-
-                                                <span class="expand">
-                                                    Xem tất cả
-                                                </span>
-                                            </div>
-                                            <div class="col l-3 nav__dropdown-right-content-list">
-                                                <h4>
-                                                    SÁCH HỌC NGOẠI NGỮ
-                                                </h4>
-
-                                                <ul class="nav__dropdown-right-content-item">
-                                                    <li>
-                                                        <a href="">Tiếng Anh</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Tiếng Nhật</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Tiếng Hoa</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="">Tiếng Hàn</a>
-                                                    </li>                                                    
-                                                </ul>
-
-                                                <span class="expand">
-                                                    Xem tất cả
-                                                </span>
-                                            </div>
+                                            <a class="l-4 search__dropdown-hotkey-item">
+                                                <img src="./assets/img/base/header/search/search hot key/kheo-khon-voi-tien_bia.jpg"
+                                                    alt="">
+                                                <span>Khéo Khôn Với Tiền - Tránh Những Ưu Phiền</span>
+                                            </a>
+                                            <a class="l-4 search__dropdown-hotkey-item">
+                                                <img src="./assets/img/base/header/search/search hot key/8936183839262_1.jpg"
+                                                    alt="">
+                                                <span>Balo Giá Tốt</span>
+                                            </a>
+                                            <a class="l-4 search__dropdown-hotkey-item">
+                                                <img src="./assets/img/base/header/search/search hot key/image_195509_1_31011.jpg"
+                                                    alt="">
+                                                <span>Tủ Sách Thiếu Nhi Giảm Sâu</span>
+                                            </a>
+                                        </div>
+                                        <div class="row">
+                                            <a class="l-4 search__dropdown-hotkey-item">
+                                                <img src="./assets/img/base/header/search/search hot key/9781668009048bia.jpg"
+                                                    alt="">
+                                                <span>The Woman In Me</span>
+                                            </a>
+                                            <a class="l-4 search__dropdown-hotkey-item">
+                                                <img src="./assets/img/base/header/search/search hot key/swm-c008_39_ebd056655ceb4e418771.jpg"
+                                                    alt="">
+                                                <span>Họa Cụ - Trang Trí Sổ</span>
+                                            </a>
+                                            <a class="l-4 search__dropdown-hotkey-item">
+                                                <img src="./assets/img/base/header/search/search hot key/8935210307989.jpg"
+                                                    alt="">
+                                                <span>Bút Chấm Đọc - Học Tiếng Anh</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="line"></div>
+                                <div class="search__dropdown-list">
+                                    <div class="search__dropdown-title">
+                                        <div class="search__dropdown-title-left">
+                                            <img src="./assets/img/icon-menu.png" alt="">
+                                            <span>Danh mục nổi bật</span>
+                                        </div>
 
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- search -->
-                    <div class="header__main-search" style="cursor: pointer;">
-                        <input class="search__input" type="text" placeholder="7 bước để thay cuộc đời bạn mãi mãi">
-                        <span class="btn-search">
-                            <i class="bi bi-search"></i>
-                        </span>
-
-                        <!-- search dropdown -->
-
-                        <div class="search__dropdown">
-                            <div class="search__dropdown-banner">
-                                <a href="" class="search__dropdown-banner-link">
-                                    <span>Quà tặng 8/3 - Chúc mừng ngày Phụ Nữ	</span>
-                                    <img src="./assets/img/base/header/search/2000199224070-_1_.jpg" alt="">
-                                </a>
-                            </div>
-
-                            <div class="search__dropdown-list">
-                                <div class="search__dropdown-title">
-                                    <div class="search__dropdown-title-left">
-                                        <img src="./assets/img/base/header/search/ico_searchtrending_black.svg" alt="">
-                                        <span>Từ khóa hot</span>
+                                        <i class="bi bi-arrow-repeat"></i>
                                     </div>
 
-                                    <i class="bi bi-arrow-repeat"></i>
-                                </div>
+                                    <div class="search__dropdown-cathot">
+                                        <div class="row">
+                                            <a class="l-3 search__dropdown-cathot-item">
+                                                <img src="./assets/img/base/header/search/search cat hot/bia_omega_complex_phuc_cam_omega_-_tap_2.-02_copy.png"
+                                                    alt="">
+                                                <span>Truyện Đam Mỹ Mới Nhất</span>
+                                            </a>
+                                            <a class="l-3 search__dropdown-cathot-item">
+                                                <img src="./assets/img/base/header/search/search cat hot/dragon_ball_super_bia_tap_19.jpg"
+                                                    alt="">
+                                                <span>Manga - Comic Mới Nhất</span>
+                                            </a>
+                                            <a class="l-3 search__dropdown-cathot-item">
+                                                <img src="./assets/img/base/header/search/search cat hot/z5108142149488_a994ad7a54555b1db6b5e27918df310a.jpg"
+                                                    alt="">
+                                                <span>Tâm lý - Trinh thám đọc nhiều </span>
+                                            </a>
+                                            <a class="l-3 search__dropdown-cathot-item">
+                                                <img src="./assets/img/base/header/search/search cat hot/english_grammar_in_use_book_w_ans_1_2018_09_19_15_25_47.jpeg"
+                                                    alt="">
+                                                <span>Ngoại Văn Được Săn Đón</span>
+                                            </a>
+                                        </div>
 
-                                <div class="search__dropdown-hotkey">
-                                    <div class="row">
-                                        <a class="l-4 search__dropdown-hotkey-item">
-                                            <img src="./assets/img/base/header/search/search hot key/kheo-khon-voi-tien_bia.jpg" alt="">
-                                            <span>Khéo Khôn Với Tiền - Tránh Những Ưu Phiền</span>
-                                        </a>
-                                        <a class="l-4 search__dropdown-hotkey-item">
-                                            <img src="./assets/img/base/header/search/search hot key/8936183839262_1.jpg" alt="">
-                                            <span>Balo Giá Tốt</span>
-                                        </a>
-                                        <a class="l-4 search__dropdown-hotkey-item">
-                                            <img src="./assets/img/base/header/search/search hot key/image_195509_1_31011.jpg" alt="">
-                                            <span>Tủ Sách Thiếu Nhi Giảm Sâu</span>
-                                        </a>
                                     </div>
-                                    <div class="row">
-                                        <a class="l-4 search__dropdown-hotkey-item">
-                                            <img src="./assets/img/base/header/search/search hot key/9781668009048bia.jpg" alt="">
-                                            <span>The Woman In Me</span>
-                                        </a>
-                                        <a class="l-4 search__dropdown-hotkey-item">
-                                            <img src="./assets/img/base/header/search/search hot key/swm-c008_39_ebd056655ceb4e418771.jpg" alt="">
-                                            <span>Họa Cụ - Trang Trí Sổ</span>
-                                        </a>
-                                        <a class="l-4 search__dropdown-hotkey-item">
-                                            <img src="./assets/img/base/header/search/search hot key/8935210307989.jpg" alt="">
-                                            <span>Bút Chấm Đọc - Học Tiếng Anh</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="line"></div>
-                            <div class="search__dropdown-list">
-                                <div class="search__dropdown-title">
-                                    <div class="search__dropdown-title-left">
-                                        <img src="./assets/img/icon-menu.png" alt="">
-                                        <span>Danh mục nổi bật</span>
-                                    </div>
-
-                                    <i class="bi bi-arrow-repeat"></i>
-                                </div>
-
-                                <div class="search__dropdown-cathot">
-                                    <div class="row">
-                                        <a class="l-3 search__dropdown-cathot-item">
-                                            <img src="./assets/img/base/header/search/search cat hot/bia_omega_complex_phuc_cam_omega_-_tap_2.-02_copy.png" alt="">
-                                            <span>Truyện Đam Mỹ Mới Nhất</span>
-                                        </a>
-                                        <a class="l-3 search__dropdown-cathot-item">
-                                            <img src="./assets/img/base/header/search/search cat hot/dragon_ball_super_bia_tap_19.jpg" alt="">
-                                            <span>Manga - Comic Mới Nhất</span>
-                                        </a>
-                                        <a class="l-3 search__dropdown-cathot-item">
-                                            <img src="./assets/img/base/header/search/search cat hot/z5108142149488_a994ad7a54555b1db6b5e27918df310a.jpg" alt="">
-                                            <span>Tâm lý - Trinh thám đọc nhiều	</span>
-                                        </a>
-                                        <a class="l-3 search__dropdown-cathot-item">
-                                            <img src="./assets/img/base/header/search/search cat hot/english_grammar_in_use_book_w_ans_1_2018_09_19_15_25_47.jpeg" alt="">
-                                            <span>Ngoại Văn Được Săn Đón</span>
-                                        </a>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- thao tác người dùng -->
-                    <div class="header__main-information">
-                        <div class="header__main-notifications">
-                            <i class="bi bi-bell"></i>
-                            <p>Thông Báo</p>
-
-                            <div class="notifications__dropdown">
-                                <div class="notifications__dropdown-header">
-                                    <i class="bi bi-bell"></i>
-                                    <span>Thông báo</span>
-                                </div>
-
-                                <div class="notifications__dropdown-center">
-                                    <img src="./assets/img/base/header/notifications/istockphoto-936681148-612x612.jpg" alt="">
-                                    <span>Vui lòng đăng nhập để xem thông báo</span>
-                                </div>
-
-                                <div class="login">
-                                    <a href=""><p>Đăng nhập</p></a>
-                                </div>
-
-                                <div class="register">
-                                    <a href=""><p>Đăng ký</p></a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="header__main-cart">
-                            <!-- <a href="./cart.html">
+                        <!-- thao tác người dùng -->
+                        <div class="header__main-information">
+                            <div class="header__main-notifications">
+                                <i class="bi bi-bell"></i>
+                                <p>Thông Báo</p>
+
+                                <div class="notifications__dropdown">
+                                    <div class="notifications__dropdown-header">
+                                        <i class="bi bi-bell"></i>
+                                        <span>Thông báo</span>
+                                    </div>
+
+                                    <div class="notifications__dropdown-center">
+                                        <img src="./assets/img/base/header/notifications/istockphoto-936681148-612x612.jpg"
+                                            alt="">
+                                        <span>Vui lòng đăng nhập để xem thông báo</span>
+                                    </div>
+
+                                    <div class="login">
+                                        <a href="">
+                                            <p>Đăng nhập</p>
+                                        </a>
+                                    </div>
+
+                                    <div class="register">
+                                        <a href="">
+                                            <p>Đăng ký</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="header__main-cart">
+                                <!-- <a href="./cart.html">
                                 <i class="bi bi-cart"></i>
                                 <p>Giỏ Hàng</p>
                             </a> -->
-                            <i class="bi bi-cart"></i>
-                            <p>Giỏ Hàng</p>
-                        </div>
+                                <i class="bi bi-cart"></i>
+                                <p>Giỏ Hàng</p>
+                            </div>
 
-                        <div class="header__main-account">
+                            <div class="header__main-account">
                                 <i class="bi bi-person"></i>
                                 <p>Tài khoản</p>
 
-                            <div class="account__dropdown">
-                                <div class="login">
-                                    <a href=""><p>Đăng nhập</p></a>
-                                </div>
+                                <div class="account__dropdown">
+                                    <div class="login">
+                                        <a href="">
+                                            <p>Đăng nhập</p>
+                                        </a>
+                                    </div>
 
-                                <div class="register">
-                                    <a href=""><p>Đăng ký</p></a>
-                                </div>
+                                    <div class="register">
+                                        <a href="">
+                                            <p>Đăng ký</p>
+                                        </a>
+                                    </div>
 
-                                <div class="login-fb">
-                                    <a href="">
-                                        <i class="bi bi-facebook"></i>
-                                        <span>Đăng nhập bằng facebook</span>
-                                    </a>
+                                    <div class="login-fb">
+                                        <a href="">
+                                            <i class="bi bi-facebook"></i>
+                                            <span>Đăng nhập bằng facebook</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="header__main-language">
-                            <span class="language__default">
-                                <img src="./assets/img/base/header/language/vietnam-26834_1280.webp" alt="">
-                            </span>
-                            <span class="bi bi-chevron-down"></span>
-
-                            <div class="language__dropdown none">
-                                <div class="language__vn" lang="default">
+                            <div class="header__main-language">
+                                <span class="language__default">
                                     <img src="./assets/img/base/header/language/vietnam-26834_1280.webp" alt="">
-                                    <span>VN</span>
-                                </div>
-                                <div class="language__en" lang="english">
-                                    <img src="./assets/img/base/header/language/co-anh.png" alt="">
-                                    <span>EN</span>
+                                </span>
+                                <span class="bi bi-chevron-down"></span>
+
+                                <div class="language__dropdown none">
+                                    <div class="language__vn" lang="default">
+                                        <img src="./assets/img/base/header/language/vietnam-26834_1280.webp" alt="">
+                                        <span>VN</span>
+                                    </div>
+                                    <div class="language__en" lang="english">
+                                        <img src="./assets/img/base/header/language/co-anh.png" alt="">
+                                        <span>EN</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
         </header>
 
         <!-- nd website -->
-        <!-- <div class="site__content">
+        <div class="site__content">
             <div class="grid wide row">
                 <div class="content__left col l-3">
-                    <div class="content__left-title">TÀI KHOẢN</div>
+                    <div class="content__left-title">CHÀO ADMIN</div>
                     <ul class="content__left-list">
-                        <li class="content__left-item">Bảng điều khiển tài khoản</li>
-                        <li class="content__left-item active">Thông tin tài khoản</li>
-                        <li class="content__left-item">Sổ địa chỉ</li>
-                        <li class="content__left-item">Đơn hàng của tôi</li>
-                        <li class="content__left-item">Ví voucher</li>
-                        <li class="content__left-item">Sách theo bộ</li>
-                        <li class="content__left-item">Tài khoản F-point / Freeship</li>
-                        <li class="content__left-item">Nhận xét của tôi</li>
-                        <li class="content__left-item">Thông báo</li>
-                        <li class="content__left-item">Đăng ký nhận tin điện tử</li>
+                        <li class="content__left-item">
+                            Quản lý bán hàng
+                            <ul class="content__left-item-dropdown">
+                                <li class="active">Thêm sản phẩm</li>
+                            </ul>
+                        </li>
+                        <li class="content__left-item">Quản lý danh mục</li>
+                        <li class="content__left-item">Quản lý bán hàng</li>
+                        <li class="content__left-item">Quản lý thống kê, báo cáo</li>
+                        <li class="content__left-item">Quản lý hệ thống</li>
                     </ul>
                 </div>
 
                 <div class="content__right l-9">
-                    <h1 class="content__right-title">THÔNG TIN TÀI KHOẢN</h1>
+                    <h1 class="content__right-title">THÊM SÁCH</h1>
                     <div class="input__group">
-                        <label class="col l-3">Họ*</label>
+                        <label class="col l-3">Tên sách*</label>
                         <div class="input__item l-9">
-                            <input type="text" placeholder="Nhập họ">
+                            <input type="text" placeholder="Nhập tên sách" required>
                         </div>
                     </div>
                     <div class="input__group">
-                        <label class="col l-3">Tên*</label>
+                        <label class="col l-3">Tác giả</label>
                         <div class="input__item l-9">
-                            <input type="text" placeholder="Nhập tên">
+                            <input type="text" placeholder="Nhập tên tác giả">
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <label class="col l-3">Nhà xuất bản</label>
+                        <div class="input__item l-9">
+                            <input type="text" placeholder="Nhập tên nhà xuất bản">
+                        </div>
+                    </div>
+                    <div class="input__group">
+                        <label class="col l-3">Mô tả</label>
+                        <div class="input__item l-9">
+                            <input type="text" placeholder="Nhập mô tả">
                         </div>
 
                     </div>
                     <div class="input__group">
-                        <label class="col l-3">Số điện thoai</label>
+                        <label class="col l-3">Giá</label>
                         <div class="input__item l-9">
-                            <input type="text" placeholder="Nhập số điện thoại">
+                            <input type="text" class="col" placeholder="Nhập giá cũ" required>
                         </div>
 
                     </div>
                     <div class="input__group">
-                        <label class="col l-3">Email</label>
+                        <label class="col l-3">Giảm giá</label>
                         <div class="input__item l-9">
-                            <input type="text" class="col" placeholder="Nhập email">
+                            <input type="text" class="col" placeholder="Giảm bao nhiêu %">
                         </div>
 
                     </div>
                     <div class="input__group">
-                        <label class="col l-3">Giới tính*</label>
+                        <label class="col l-3">Danh mục</label>
                         <div class="input__item l-9">
-                            <input type="radio" id="nam" class="gender-radio" name="gender-radio" value="Nam">
-                            <label for="nam">Nam</label>
-                            <input type="radio" id="nữ" class="gender-radio" name="gender-radio" value="Nữ">
-                            <label for="nữ">Nữ</label>
-                        </div>
-
-                    </div>
-                    <div class="input__group">
-                        <label class="col l-3">Birthday*</label>
-                        <div class="input__item l-9">
-                            <input class="birthday" type="text" placeholder="DD" maxlength="2">
-                            <input class="birthday" type="text" placeholder="MM" maxlength="2">
-                            <input class="birthday" type="text" placeholder="YY" maxlength="4">
+                            <input type="text" class="col" placeholder="Tên danh mục">
                         </div>
 
                     </div>
 
                     <div class="input__group">
-                        <label class="l-3"></label>
-                        <div class="input__item">
-                            <input type="checkbox" id="changepassword">
-                            <label for="changepassword">Đổi mật khẩu</label>
-                        </div>
-                    </div>
-                    <div class="input__group">
-                        <button class="save">Lưu thay đổi</button>
+                        <button class="save">Thêm sản phẩm</button>
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
 
 
 
@@ -603,7 +619,7 @@
                             <p>Công Ty Cổ Phần Phát Hành Sách TP HCM - FAHASA</p>
                             <p>60 - 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam</p>
                             <p>Fahasa.com
-                                nhận đặt hàng trực tuyến và giao hàng tận nơi. 
+                                nhận đặt hàng trực tuyến và giao hàng tận nơi.
                                 KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn
                                 phòng cũng như tất cả Hệ Thống Fahasa trên toàn quốc.
                             </p>
@@ -630,7 +646,7 @@
 
                                 <a href="">
                                     <img src="./assets/img/base/footer/dowload/appstore1.png" alt="">
-                                </a>                                
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -672,23 +688,23 @@
                                         <li class="info__list-item">
                                             <a href="">Chính sách đổi - trả - hoàn tiền</a>
                                         </li>
-                                        
+
                                         <li class="info__list-item">
                                             <a href="">Chính sách bảo hành - bồi hoàn</a>
                                         </li>
-                                        
+
                                         <li class="info__list-item">
                                             <a href="">Chính sách vận chuyển</a>
                                         </li>
-                                        
+
                                         <li class="info__list-item">
                                             <a href="">Chính sách khách sỉ</a>
                                         </li>
-                                        
+
                                         <li class="info__list-item">
                                             <a href="">Phương thức thanh toán và xuất HĐ</a>
                                         </li>
-                                        
+
                                     </ul>
                                 </div>
                             </div>
@@ -700,19 +716,19 @@
                                         <li class="info__list-item">
                                             <a href="">Đăng nhập/Tạo mới tài khoản</a>
                                         </li>
-                                        
+
                                         <li class="info__list-item">
                                             <a href="">Thay đổi địa chỉ khách hàng</a>
                                         </li>
-                                        
+
                                         <li class="info__list-item">
                                             <a href="">Chi tiết tài khoản</a>
                                         </li>
-                                        
+
                                         <li class="info__list-item">
                                             <a href="">Lịch sử mua hàng</a>
                                         </li>
-                                        
+
                                     </ul>
                                 </div>
                             </div>
@@ -756,7 +772,10 @@
                             </div>
                         </div>
                     </div>
-                    <p style="display: flex;justify-content: center; font-size: 12px;margin: 20px 0;padding: 0;color: #888;">Giấy chứng nhận Đăng ký Kinh doanh số 0304132047 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh cấp ngày 20/12/2005, đăng ký thay đổi lần thứ 10, ngày 20/05/2022.</p>
+                    <p
+                        style="display: flex;justify-content: center; font-size: 12px;margin: 20px 0;padding: 0;color: #888;">
+                        Giấy chứng nhận Đăng ký Kinh doanh số 0304132047 do Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh
+                        cấp ngày 20/12/2005, đăng ký thay đổi lần thứ 10, ngày 20/05/2022.</p>
                 </div>
 
             </div>
@@ -769,4 +788,5 @@
 <script src="./assets/js/nav-dropdown.js"></script>
 <script src="./assets/js/language.js"></script>
 <script src="./assets/js/move-to.js"></script>
+
 </html>
