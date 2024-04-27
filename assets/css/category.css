@@ -1,0 +1,14 @@
+.path {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+
+.path a {
+    color: #666;
+    text-decoration: none;
+}
+
+.path strong {
+    color: #F79462;
+}

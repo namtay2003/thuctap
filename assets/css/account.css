@@ -1,0 +1,159 @@
+.site__content {
+    padding-top: 10px;
+}
+
+.form__login,
+.form__register {
+    background-color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__header {
+    width: auto;
+    height: 60px;
+    line-height: 60px;
+}
+
+.form__header .login,
+.form__header .register {
+    font-size: 16px;
+    padding: 0 60px;
+    padding-bottom: 10px;
+    margin-right: 5px;
+}
+
+
+.form__header .login:hover,
+.form__header .register:hover {
+    color: #C92127;
+    border-bottom: 2px solid #C92127;
+}
+
+.form {
+    font-size: 16px;
+    margin-left: 30px;
+    height: 360px;
+}
+
+.input__box {
+    margin: 20px;
+}
+
+.form_title {
+    height: 40px;
+    line-height: 40px;
+}
+
+.input__group input {
+    width: 400px;
+    height: 36px;
+    padding-left: 14px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+.input__group input:focus {
+    border-color: rgb(100,137,245);    
+}
+
+.input__group.password {
+    position: relative;
+}
+
+.hidden,
+.show {
+    position: absolute;
+    font-size: 14px;
+    color: blue;
+    right: 10px;
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+}
+
+.forget__pass {
+    justify-content: flex-end;
+    cursor: pointer;
+    font-size: 14px;
+    color: red;
+    display: flex;
+}
+
+.btn__login-box,
+.btn__register-box {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 40px;
+    line-height: 40px;
+    margin: auto;
+}
+
+.btn__login-box .login,
+.btn__login-box .login__fb,
+.btn__register-box .register {
+    border: none;
+    margin: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn__login-box .login,
+.btn__register-box .register {
+    color: #636377;
+    background-color: #E0E0E0;
+}
+
+.btn__login-box .login__fb {
+    color: #fff;
+    background-color: #2489F4;
+}
+
+.btn__login-box .login__fb i {
+    font-size: 20px;
+}
+
+.active {
+    color: #C92127;
+}
+
+
+
+/* form register */
+.input__group.register {
+    position: relative;
+}
+
+.OTP {
+    position: absolute;
+    right: 10px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    color: blue;
+    cursor: pointer;
+}
+
+
+.register__term {
+    margin-top: 30px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.register__term p {
+    margin: 0;
+}
+
+.register__term a {
+    text-decoration: none;
+
+}

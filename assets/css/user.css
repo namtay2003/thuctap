@@ -1,0 +1,85 @@
+
+.site__content {
+    padding-top: 10px;
+}
+
+.content__left {
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.content__left-title {
+    color: #C92127;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.content__left-list {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.content__left-item {
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #F2F2F2;
+}
+
+.content__right {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.content__right-title {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.input__group {
+    display: flex;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+input {
+    outline: none;
+}
+
+.content__right .input__group:nth-child(1) input,
+.content__right .input__group:nth-child(2) input,
+.content__right .input__group:nth-child(3) input,
+.content__right .input__group:nth-child(4) input, 
+.content__right .input__group:nth-child(5) input {
+    width: 600px;
+    padding-left: 20px;
+}
+
+.gender-radio {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input.birthday {
+    text-align: center;
+}
+
+.save {
+    width: 180px;
+    height: 40px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #C92127;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+}
+
+.active {
+    color: #BF9A7A;
+}
